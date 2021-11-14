@@ -1,0 +1,346 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+a{
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+
+ [class*="col-"]{
+    width: 100%;
+} 
+
+
+ .navbar{
+    background-color: #40868b;
+    padding: 1% 7%;
+    text-align: center;
+} 
+
+.navbar h1{
+    color: white;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.navbar-menu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.navbar-menu a{
+    background-color: #0c6168;
+    border-radius: 10px;
+    margin: 7px 0px;
+    padding: 10px;
+}
+
+.navbar-menu a:hover{
+    background-color: GREEN;
+}
+
+
+.navbar::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.profile{
+    padding: 150px 20px;
+    position: relative;
+    text-align: center;
+}
+
+
+.profile-desc h1{
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
+}
+
+.profile-desc p{
+    color: gray;
+    text-align: center;
+    width: 90%;
+}
+
+
+.profile::after{
+    content: '';
+    display: table;
+    clear: both;
+}  
+
+.about-me{
+    background-color:grey;
+    padding: 1% 7%;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.aboutme-image img{
+    border: 1px solid white;
+    border-radius: 80%;
+    height: 300px;
+    width: 400px;
+    position: center;
+}
+
+.about-me p{
+    text-align: center;
+}
+
+.about-me a{
+    font-size: 2.4rem;
+}
+
+.about-me::after{
+    clear: both;
+    display: table;
+    content: '';
+} 
+ .projects-details{
+    padding: 1% 0%;
+    background-color: #FFB200;
+    font-size: 2.5rem;
+   
+}
+
+.projects-details .card{
+    background-color: #39a4ac;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.3s;
+    height: 600px;
+    font-size: 2.5rem; 
+ }
+
+.card-title h2{
+    background-color: black;
+    color: white;
+    padding: 30px 30px;
+    text-align: center;
+}
+
+.skills{
+    padding-right: 45px;
+    font-size: 2.5rem;
+}
+
+.skills li{
+    list-style: none;
+    font-weight: bolder;
+    margin: 30px;
+    position: relative;
+    text-transform: uppercase;
+    
+}
+
+.skills li::before{
+   content: '';
+   position: absolute;
+   top: calc(100% + 5px);
+   left: 0;
+
+   width: 100%;
+   height: 10px;
+   background-color: rgb(86,86,153,.5);
+   border-radius: 1000px;
+   
+}
+
+
+.skills li::after{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    
+ 
+    width: 60px;
+    height:5px;
+    background-color: yellow;
+    border-radius: 1000px;
+
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+ }
+
+ .skills li.html::after{
+     animation-name: html;
+ }
+
+ @keyframes html{
+     to{
+         width: 90%;
+     }
+ }
+
+ .skills li.css::after{
+    animation-name: css;
+ }
+ 
+ @keyframes css{
+     to{
+         width: 80%;
+     }
+ }
+  
+ .skills li.bootstrap::after{
+     animation-name: bs;
+  }
+  
+  @keyframes bs{
+      to{
+          width: 85%;
+      }
+  }
+ 
+ .skills li.js::after{
+    animation-name: js;
+ }
+ 
+ @keyframes js{
+     to{
+         width: 75%;
+     }
+ }
+ 
+
+.projects-details::after{
+   clear: both;
+   display: table;
+   content: '';
+}
+
+.contact-details{
+    padding: 1% 7%;
+    background-color:blue;
+    color: white;
+}
+
+.contact-details{
+    text-align: center;
+}
+
+.contact-details input, textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+
+.contact-details button{
+    border: none;
+    border-radius: 12px;
+    background-color: #052d2f;
+    color: white;
+    padding: 15px;
+    margin: 10px;
+    width: 100px;
+}
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.nav-heading h1{
+    text-align: right;
+}
+
+.navbar-menu{
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.navbar-menu a{
+    padding: 5px 10px;
+    margin: 20px 0;
+    background-color: transparent;
+}
+
+.profile-desc p{
+    color: gray;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.aboutme-image{
+    margin-top: 100px;
+    padding: 0.5px;
+}
+
+.aboutme-image img{
+    height: 250px;
+    width: 250px;
+}
+
+.aboutme-desc p{
+    text-align: left;
+}
+
+.professional-experience{
+    padding: 1% 5%;
+}
+.achievement{
+    padding-right: 50px;
+}
+
+.contact button{
+    width: 150px;
+}
+
+.media-buttons{
+    position: absolute;
+    margin-top: 200px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
